@@ -690,14 +690,11 @@ body{
         margin-top: 20px;
         margin-left: 16px;
         height: 60px;
-        width: 100%;
-        font-size: 20px;
     }
     .subs{
         width: 80%;
     }
     .subs p{
-        font-size: 20px;
         margin-left: 16px;
         margin-top: 16px;
     }
