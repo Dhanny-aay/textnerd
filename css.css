@@ -5,6 +5,12 @@
 body{
     background: #ffffff;
 }
+.repo{
+    display: none;
+}
+.menudrop{
+    display: none;
+}
 .header-logo{
     /* position: absolute; */
     margin-top: 261px;
@@ -44,6 +50,10 @@ body{
     border-radius: 50%;
     border: none;
     background: rgba(236, 89, 77, 0.1);
+}
+.header-dropdown button:hover{
+    border: 1px solid #ec594D;
+    background: #ffffff;
 }
 .step-1{
     margin-top: 168px;
@@ -286,8 +296,11 @@ body{
     line-height: 150%;
     text-align: center;
     color: #ffffff;
-
-
+}
+.footerbtn:hover{
+    background: #ffffff;
+    color: #ec594D;
+    border: 1px solid;
 }
 .footer-img{
     margin-top: 79px;
@@ -340,8 +353,27 @@ body{
     margin-right: 18px;
 }
 @media (max-width:700px) {
-    .wrapper{
-        margin-top: 116px;
+.repo{
+        display: block;
+        height: 60px;
+        width: 100%;
+        background: #ffffff;
+    }
+.nav-bar{
+        background: #ffffff;
+    }
+.hmbgr{
+        float:right;
+        margin: 20px 30px 0 0;
+    }
+.hmbgr div{
+        width: 25px;
+        height: 2px;
+        background-color: #000;
+        margin: 4px 0;
+    }
+.wrapper{
+        margin-top: 52px;
     }
     .header-logo{
         /* position: absolute; */
@@ -649,6 +681,82 @@ body{
     }
 }
 @media (max-width:1024px){
+    .repo{
+        display: block;
+        height: 60px;
+        width: 100%;
+        background: #ffffff;
+        position: sticky;
+        
+    }
+    .sticky{
+        top: 0;
+        width: 100%;
+    }
+    .sticky + .content{
+        padding-top: 60px;
+    }
+    .nav-bar{
+        background: #ffffff;
+    }
+    .hmbgr{
+        float:right;
+        margin: 20px 30px 0 0;
+        display: block;
+    }
+    .exit{
+        display: none;
+        position: absolute;
+        right: 0;
+        margin: 10px 20px 0 0;
+    }
+    .hmbgr div{
+        width: 25px;
+        height: 2px;
+        background-color: #000;
+        margin: 4px 0;
+    }
+    .menudrop{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 600px;
+        background: #ec594D;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 52px;
+        list-style: none;
+    }
+    .menu li{
+        margin-bottom: 56px;
+    }
+    .menu a{
+        text-decoration: none;
+        font-family: 'montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 150%;
+        color: #ffffff;
+    }
+    .social{
+     margin-top: 170px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    .social button{
+        width: 48px;
+        height: 48px;
+        border-radius: 50px;
+        border: 2px solid #ffffff;
+        background: #ec594D;
+        margin-left: 16px;
+        
+    }
     .wrapper2{
         display: flex;
         flex-direction: column;
@@ -690,6 +798,7 @@ body{
         margin-top: 20px;
         margin-left: 16px;
         height: 60px;
+        width: 100%;
     }
     .subs{
         width: 80%;
